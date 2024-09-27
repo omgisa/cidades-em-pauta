@@ -1,0 +1,85 @@
+header {
+    background-color: #001A66;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px 5px 0px;
+    color: #7CC1F2;
+    position: relative;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#titulo {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+  
+.map-iframe {
+    width: 100%;
+    height: calc(100vh - 120px);
+    border: 0;
+}
+  /* styles for the floating buttons */
+.botao {
+    position: fixed;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#button1 {
+    bottom: 220px;
+    background-color: #FFD700;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-image: url('../images/alerta_amarelo.png');
+}
+
+#button2 {
+    bottom: 140px;
+    background-color: #ff0000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-image: url('../images/alerta_vermelho.png');
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.hint-box {
+    display: none;
+    position: absolute;
+    background-color: #FFD700;
+    color: #333;
+    padding: 20px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    z-index: 100;
+    right: 90px; /* Posiciona à esquerda dos botões */
+    white-space: nowrap; /* Evita quebra de linha */
+    font-family: 'Inter', sans-serif;
+}
