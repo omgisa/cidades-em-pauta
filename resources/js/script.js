@@ -32,3 +32,31 @@ document.addEventListener('DOMContentLoaded', function() {
         hintBox.style.display = 'none';
     }
   });
+
+  // Initialize and add the map
+let map;
+
+async function initMap() {
+  // The location of SESI Lorena
+  const position = { lat: -22.7251316, lng: -45.1214007 };
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  // The map, centered at SESI Lorena
+  map = new Map(document.getElementById("map"), {
+    zoom: 12,
+    center: position,
+    mapId: "DEMO_MAP_ID",
+  });
+
+  // The marker, positioned at SESI Lorena
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: "SESI Lorena",
+  });
+}
+
+initMap();

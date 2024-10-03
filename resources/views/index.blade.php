@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{ asset('img/city_life_2.png') }}">
     <title>Cidades em Pauta</title>
-    @vite('resources/css/style.css', 'resources/js/script.js')
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <script src="{{ asset('js/script.js') }}"></script>
+    @vite(['resources/css/style.css', 'resources/js/app.js', 'resources/js/script.js'])
 </head>
 
 <body>
