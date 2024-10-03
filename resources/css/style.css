@@ -6,7 +6,10 @@ header {
     align-items: center;
     padding: 5px 0px 5px 0px;
     color: #7CC1F2;
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
 }
 
 .header-left {
@@ -56,14 +59,14 @@ header {
     bottom: 220px;
     background-color: #FFD700;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-image: url('../images/alerta_amarelo.png');
+    background-image: url(/resources/img/alerta_amarelo.png);
 }
 
 #button2 {
     bottom: 140px;
     background-color: #ff0000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-image: url('../images/alerta_vermelho.png');
+    background-image: url(/resources/img/alerta_vermelho.png);
 }
 
 button:hover {
@@ -82,4 +85,15 @@ button:hover {
     right: 90px; /* Posiciona à esquerda dos botões */
     white-space: nowrap; /* Evita quebra de linha */
     font-family: 'Inter', sans-serif;
+}
+
+#map {
+    height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
