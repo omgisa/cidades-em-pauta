@@ -60,3 +60,11 @@ async function initMap() {
 }
 
 initMap();
+
+document.getElementById('button1').addEventListener('click', function() {
+    document.getElementById('crudForm').style.display = 'block'; // Mostra o formulário
+});
+
+document.getElementById('cancelButton').addEventListener('click', function() {
+    document.getElementById('crudForm').style.display = 'none'; // Esconde o formulário
+});

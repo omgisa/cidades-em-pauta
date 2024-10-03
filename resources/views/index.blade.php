@@ -26,42 +26,42 @@
     
     <form id="crudForm">
         <div class="form-group">
-            <label for="input1">Endereço (rua, bairro, cidade):</label>
-            <input type="text" id="input1" name="input1" required>
+            <label for="endereco">Endereço (rua, bairro, cidade):</label>
+            <input type="text" id="endereço" name="local" required>
         </div>
 
         <div class="form-group">
-            <label>Tipo de pavimentação (selecione):</label><br>
-            <input type="radio" id="option1" name="group1" value="opcao1">
-            <label for="option1">Opção 1</label><br>
-            <input type="radio" id="option2" name="group1" value="opcao2">
-            <label for="option2">Opção 2</label><br>
-            <input type="radio" id="option3" name="group1" value="opcao3">
-            <label for="option3">Opção 3</label>
+            <label>Modelo de pavimento (selecione):</label><br>
+            <input type="radio" id="asfalto" name="modelo" value="opcao1">
+            <label for="asfalto">Asfalto</label><br>
+            <input type="radio" id="bloquete" name="modelo" value="opcao2">
+            <label for="bloquete">Bloquete</label><br>
+            <input type="radio" id="semPavimento" name="modelo" value="opcao3">
+            <label for="semPavimento">Sem pavimento</label>
         </div>
 
         <div class="form-group">
             <label>Avalie a condição do pavimento (selecione):</label><br>
-            <input type="radio" id="option4" name="group2" value="opcao4">
-            <label for="option4">Opção 4</label><br>
-            <input type="radio" id="option5" name="group2" value="opcao5">
-            <label for="option5">Opção 5</label><br>
-            <input type="radio" id="option6" name="group2" value="opcao6">
-            <label for="option6">Opção 6</label><br>
-            <input type="radio" id="option7" name="group2" value="opcao7">
-            <label for="option7">Opção 7</label><br>
-            <input type="radio" id="option8" name="group2" value="opcao8">
-            <label for="option8">Opção 8</label>
+            <input type="radio" id="muitoBom" name="avalie" value="opcao4">
+            <label for="muitoBom">Muito bom</label><br>
+            <input type="radio" id="bom" name="avalie" value="opcao5">
+            <label for="bom">Bom</label><br>
+            <input type="radio" id="ok" name="avalie" value="opcao6">
+            <label for="ok">Ok</label><br>
+            <input type="radio" id="ruim" name="avalie" value="opcao7">
+            <label for="ruim">Ruim</label><br>
+            <input type="radio" id="muitoRuim" name="avalie" value="opcao8">
+            <label for="muitoRuim">Muito ruim</label>
         </div>
 
         <div class="form-group">
-            <label for="input2">Observações:</label>
-            <input type="text" id="input2" name="input2" required>
+            <label for="observacoes">Observações:</label>
+            <input type="text" id="observacoes" name="complemento" required>
         </div>
 
         <div class="form-group">
             <button type="submit">Enviar</button>
-            <button type="button" onclick="document.getElementById('crudForm').reset();">Cancelar</button>
+            <button type="button" id="cancelButton">Cancelar</button>
         </div>
     </form>
 
