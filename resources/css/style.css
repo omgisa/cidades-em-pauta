@@ -56,14 +56,14 @@ header {
     bottom: 220px;
     background-color: #FFD700;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-image: url('../images/alerta_amarelo.png');
+    background-image: url(/resources/img/alerta_amarelo.png);
 }
 
 #button2 {
     bottom: 140px;
     background-color: #ff0000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-image: url('../images/alerta_vermelho.png');
+    background-image: url(/resources/img/alerta_vermelho.png);
 }
 
 button:hover {
