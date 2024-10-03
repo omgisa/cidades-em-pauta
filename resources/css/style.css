@@ -37,7 +37,7 @@ header {
   
 .map-iframe {
     width: 100%;
-    height: calc(100vh - 120px);
+    height: 100%;
     border: 0;
 }
   /* styles for the floating buttons */
@@ -93,12 +93,65 @@ button:hover {
 
 #crudForm {
     display: none;
+    position: absolute;
+    left: 32.5%;
+    top: 30%;
     background-color: white;
+    font-family: 'Inter', 'sans-serif';
     margin-left: 100px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+}
+
+#endereco {
+    width: 96%;
+    border-radius: 5px;
+}
+
+#observacoes {
+    width: 96%;
+    border-radius: 5px;
+}
+
+.form-group1 {
+    margin-top: 10px;
+}
+
+.form-group2 {
+    margin-top: 10px;
+}
+
+.form-group3 {
+    margin-top: 10px;
+}
+
+.form-group4 {
+    margin-top: 10px;
+    margin-left: 174px;
+}
+
+#sendButton {
+    border-radius: 15px;
+    border: none;
+    background-color: #7CC1F2;
+    cursor: pointer;
+}
+
+#sendButton:hover{
+    background: #9dcdf0;
+}
+
+#cancelButton {
+    border-radius: 15px;
+    border: none;
+    background-color: #CECECE;
+    cursor: pointer;
+}
+
+#cancelButton:hover{
+    background: #e1e0e0;
 }
 
 .info {

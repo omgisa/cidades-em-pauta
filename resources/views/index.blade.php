@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{ asset('img/city_life_2.png') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Cidades em Pauta</title>
     @vite(['resources/css/style.css', 'resources/js/app.js', 'resources/js/script.js'])
 </head>
@@ -26,12 +28,12 @@
     
     <form id="crudForm">
         <div class="form-group">
-            <label for="endereco">Endereço (rua, bairro, cidade):</label>
-            <input type="text" id="endereço" name="local" required>
+            <label for="endereco"><b>Endereço (rua, bairro, cidade):</b></label>
+            <input type="text" id="endereco" name="local" required>
         </div>
 
-        <div class="form-group">
-            <label>Modelo de pavimento (selecione):</label><br>
+        <div class="form-group1">
+            <label><b>Modelo de pavimento (selecione):</b></label><br>
             <input type="radio" id="asfalto" name="modelo" value="opcao1">
             <label for="asfalto">Asfalto</label><br>
             <input type="radio" id="bloquete" name="modelo" value="opcao2">
@@ -40,8 +42,8 @@
             <label for="semPavimento">Sem pavimento</label>
         </div>
 
-        <div class="form-group">
-            <label>Avalie a condição do pavimento (selecione):</label><br>
+        <div class="form-group2">
+            <label><b>Avalie a condição do pavimento (selecione):</b></label><br>
             <input type="radio" id="muitoBom" name="avalie" value="opcao4">
             <label for="muitoBom">Muito bom</label><br>
             <input type="radio" id="bom" name="avalie" value="opcao5">
@@ -54,13 +56,13 @@
             <label for="muitoRuim">Muito ruim</label>
         </div>
 
-        <div class="form-group">
-            <label for="observacoes">Observações:</label>
+        <div class="form-group3">
+            <label for="observacoes"><b>Observações:</b></label>
             <input type="text" id="observacoes" name="complemento" required>
         </div>
 
-        <div class="form-group">
-            <button type="submit">Enviar</button>
+        <div class="form-group4">
+            <button type="submit" id="sendButton">Enviar</button>
             <button type="button" id="cancelButton">Cancelar</button>
         </div>
     </form>
