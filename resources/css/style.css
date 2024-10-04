@@ -91,7 +91,7 @@ button:hover {
     height: 100%;
 }
 
-#crudForm {
+#crudForm1 {
     display: none;
     position: absolute;
     left: 32.5%;
@@ -105,12 +105,12 @@ button:hover {
     width: 300px;
 }
 
-#endereco {
+#endereco1 {
     width: 96%;
     border-radius: 5px;
 }
 
-#observacoes {
+#observacoes1 {
     width: 96%;
     border-radius: 5px;
 }
@@ -132,25 +132,88 @@ button:hover {
     margin-left: 174px;
 }
 
-#sendButton {
+#sendButton1 {
     border-radius: 15px;
     border: none;
     background-color: #7CC1F2;
     cursor: pointer;
 }
 
-#sendButton:hover{
+#sendButton1:hover{
     background: #9dcdf0;
 }
 
-#cancelButton {
+#cancelButton1 {
     border-radius: 15px;
     border: none;
     background-color: #CECECE;
     cursor: pointer;
 }
 
-#cancelButton:hover{
+#cancelButton1:hover{
+    background: #e1e0e0;
+}
+
+#crudForm2 {
+    display: none;
+    position: absolute;
+    left: 32.5%;
+    top: 30%;
+    background-color: white;
+    font-family: 'Inter', 'sans-serif';
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#endereco2 {
+    width: 96%;
+    border-radius: 5px;
+}
+
+#observacoes2 {
+    width: 96%;
+    border-radius: 5px;
+}
+
+.form-group6 {
+    margin-top: 10px;
+}
+
+.form-group7 {
+    margin-top: 10px;
+}
+
+.form-group8 {
+    margin-top: 10px;
+}
+
+.form-group9 {
+    margin-top: 10px;
+    margin-left: 174px;
+}
+
+#sendButton2 {
+    border-radius: 15px;
+    border: none;
+    background-color: #7CC1F2;
+    cursor: pointer;
+}
+
+#sendButton2:hover{
+    background: #9dcdf0;
+}
+
+#cancelButton2 {
+    border-radius: 15px;
+    border: none;
+    background-color: #CECECE;
+    cursor: pointer;
+}
+
+#cancelButton2:hover{
     background: #e1e0e0;
 }
 

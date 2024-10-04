@@ -163,11 +163,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('button1').addEventListener('click', function() {
-        document.getElementById('crudForm').style.display = 'block'; // Mostra o formulário
+        document.getElementById('crudForm1').style.display = 'block'; // Mostra o formulário
     });
 
-    document.getElementById('cancelButton').addEventListener('click', function() {
-        document.getElementById('crudForm').style.display = 'none'; // Esconde o formulário
+    document.getElementById('cancelButton1').addEventListener('click', function() {
+        document.getElementById('crudForm1').style.display = 'none'; // Esconde o formulário
+    });
+
+    document.getElementById('button2').addEventListener('click', function() {
+        document.getElementById('crudForm2').style.display = 'block'; // Mostra o formulário
+    });
+
+    document.getElementById('cancelButton2').addEventListener('click', function() {
+        document.getElementById('crudForm2').style.display = 'none'; // Esconde o formulário
     });
 
     initMap();

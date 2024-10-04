@@ -22,14 +22,14 @@
         </div>
     </header>
     <iframe class="map-iframe"="Lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=Lorena&key=AIzaSyCHaRZdxQ3SQqK0oeCjxmuVQ7da0Zm5NCg"></iframe>
-    <button id="button1" class="botao" data-hint="Clique aqui para fazer avaliar o pavimento das ruas da sua cidade."></button>
-    <button id="button2" class="botao" data-hint="Clique aqui para emitir um alerta sobre problemas na rua."></button>
+    <button id="button1" class="botao" data-hint="Clique aqui para avaliar os pavimentos das ruas da sua cidade."></button>
+    <button id="button2" class="botao" data-hint="Clique aqui para emitir um alerta sobre problemas na sua rua."></button>
     <div id="hint-box" class="hint-box"></div>
     
-    <form id="crudForm">
+    <form id="crudForm1">
         <div class="form-group">
-            <label for="endereco"><b>Endereço (rua, bairro, cidade):</b></label>
-            <input type="text" id="endereco" name="local" required>
+            <label for="endereco1"><b>Endereço (rua, bairro, cidade):</b></label>
+            <input type="text" id="endereco1" name="local" required>
         </div>
 
         <div class="form-group1">
@@ -57,13 +57,52 @@
         </div>
 
         <div class="form-group3">
-            <label for="observacoes"><b>Observações:</b></label>
-            <input type="text" id="observacoes" name="complemento" required>
+            <label for="observacoes1"><b>Observações:</b></label>
+            <input type="text" id="observacoes1" name="complemento" required>
         </div>
 
         <div class="form-group4">
-            <button type="submit" id="sendButton">Enviar</button>
-            <button type="button" id="cancelButton">Cancelar</button>
+            <button type="submit" id="sendButton1">Enviar</button>
+            <button type="button" id="cancelButton1">Cancelar</button>
+        </div>
+    </form>
+
+    <form id="crudForm2">
+        <div class="form-group5">
+            <label for="endereco1"><b>Endereço (rua, bairro, cidade):</b></label>
+            <input type="text" id="endereco2" name="local" required>
+        </div>
+
+        <div class="form-group6">
+            <label><b>Alerta (selecione):</b></label><br>
+            <input type="radio" id="alagamento" name="alerte" value="opcao9">
+            <label for="alagamento">Alagamento</label><br>
+            <input type="radio" id="acidente" name="alerte" value="opcao10">
+            <label for="acidente">Acidente</label><br>
+            <input type="radio" id="animalPerigoso" name="alerte" value="opcao11">
+            <label for="animalPerigoso">Animal perigoso</label><br>
+            <input type="radio" id="animalDesaparecido" name="alerte" value="opcao12">
+            <label for="animalDesaparecido">Animal desaparecido</label><br>
+            <input type="radio" id="buraco" name="alerte" value="opcao13">
+            <label for="buraco">Buraco</label><br>
+            <input type="radio" id="tiroteio" name="alerte" value="opcao14">
+            <label for="tiroteio">Tiroteio</label><br>
+            <input type="radio" id="vazamentoDeBueiro" name="alerte" value="opcao15">
+            <label for="vazamentoDeBueiro">Vazamento de bueiro</label><br>
+        </div>
+
+        <div class="form-group7">
+            <label for="observacoes1"><b>Observações:</b></label>
+            <input type="text" id="observacoes2" name="complemento" required>
+        </div>
+
+        <div class="form-group8">
+            <input type="file" id="imagem" name="arquivo" required>
+        </div>
+
+        <div class="form-group9">
+            <button type="submit" id="sendButton2">Enviar</button>
+            <button type="button" id="cancelButton2">Cancelar</button>
         </div>
     </form>
 
