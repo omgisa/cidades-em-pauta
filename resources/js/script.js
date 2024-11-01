@@ -186,4 +186,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 2500);
 
     initMap();
+
+    const url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCNZSqrB7BYprZa2s2BrjJ7GgehicTIOII';
+    fetch(url, {
+        method: 'POST',
+    }).then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Success:', data);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+
 });
