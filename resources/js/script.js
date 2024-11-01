@@ -178,5 +178,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('crudForm2').style.display = 'none'; // Esconde o formulário
     });
 
+    setTimeout(() => {
+        if(document.getElementById('emitido'))
+            document.getElementById('emitido').style.display = 'none';
+        if(document.getElementById('sucesso'))
+            document.getElementById('sucesso').style.display = 'none';
+    }, 2500);
+
     initMap();
 });
