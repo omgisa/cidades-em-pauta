@@ -107,8 +107,8 @@ const getPositionErrorMessage = code => {
  * Initialize the application.
  * Automatically called by the google maps API once it's loaded.
  */
-function initMap() {
-    const initialPosition = { lat: -22.7251316, lng: -45.1214007 };
+function initMap(lat = -22.7251316, lng = -45.1214007) {
+    const initialPosition = { lat, lng };
     const map = createMap(initialPosition);
     const marker = createMarker({ map, position: initialPosition });
     const $info = document.getElementById('info');
@@ -185,9 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('sucesso').style.display = 'none';
     }, 2500);
 
-    initMap();
-
-    const url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCNZSqrB7BYprZa2s2BrjJ7GgehicTIOII';
+    const url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=' + import.meta.env.VITE_G_MAP_KEY;
     fetch(url, {
         method: 'POST',
     }).then(response => {
@@ -195,12 +193,15 @@ document.addEventListener('DOMContentLoaded', function() {
             throw new Error('Network response was not ok');
         }
         return response.json();
+        initMap();
     })
     .then(data => {
         console.log('Success:', data);
+        initMap(data.location.lat, data.location.lng);
     })
     .catch((error) => {
         console.error('Error:', error);
+        initMap();
     });
 
 });

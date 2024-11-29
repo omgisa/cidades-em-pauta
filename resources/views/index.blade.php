@@ -126,7 +126,7 @@
         </div>
     </form>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ env('G_MAP_KEY') }}"></script>
 
 </body>
 
